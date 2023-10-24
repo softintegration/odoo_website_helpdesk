@@ -49,8 +49,9 @@ class HelpDeskTicket(models.Model):
     _description = 'Helpdesk Ticket'
     _inherit = ['mail.thread', 'mail.activity.mixin']
 
-    name = fields.Char('Name', default=lambda self: self.env['ir.sequence'].
-                       next_by_code('help.ticket') or _('New'))
+    #name = fields.Char('Name', default=lambda self: self.env['ir.sequence'].
+    #                   next_by_code('help.ticket') or _('New'))
+    name = fields.Char('Name')
     customer_id = fields.Many2one('res.partner',
                                   string='Customer Name',
                                   help='Customer Name')
@@ -244,6 +245,8 @@ class HelpDeskTicket(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         """Create function"""
+        for vals in vals_list:
+            vals['name'] = self.env['ir.sequence'].next_by_code('help.ticket') or _('New')
         return super(HelpDeskTicket, self).create(vals_list)
 
     def write(self, vals):
