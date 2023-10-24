@@ -13,4 +13,13 @@ odoo.define("odoo_website_helpdesk.portal_group_by", function (require) {
                 });
     })
 
+    /*$("#ticket_type").on('change', function () {
+    var selected_ticket_type = $("#ticket_type").val();
+    ajax.jsonRpc('/ticket_type_description', 'call', {
+                'selected_ticket_type': selected_ticket_type,
+            }).then(function(result) {
+                $('#detail_description').html(result.default_description);
+                });
+    })*/
+
 })

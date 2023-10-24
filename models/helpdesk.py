@@ -436,6 +436,7 @@ class HelpdeskTypes(models.Model):
     _description = 'Helpdesk Types'
 
     name = fields.Char(string='Type', help='Types')
+    default_description = fields.Text(string='Default description',help='This is the default description that appear when the relatif type is selected in portal')
 
 
 class Tasks(models.Model):

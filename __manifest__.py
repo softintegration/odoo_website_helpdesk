@@ -22,7 +22,7 @@
 
 {
     'name': "Website Helpdesk Support Ticket Management",
-    'version': '15.0.4.0.0.2',
+    'version': '15.0.4.0.0.3',
     'summary': """Helpdesk Module for community""",
     'description': """Can create ticket from website also and can manage it from backend.
     Bill can be created for ticket with service cost""",
@@ -63,7 +63,8 @@
             'odoo_website_helpdesk/static/src/js/helpdesk_dashboard_action.js',
         ],
         'web.assets_frontend': [
-            'odoo_website_helpdesk/static/src/js/ticket_details.js',
+            '/odoo_website_helpdesk/static/src/js/ticket_details.js',
+            '/odoo_website_helpdesk/static/src/js/ticket_form.js',
             '/odoo_website_helpdesk/static/src/js/portal_search.js',
             '/odoo_website_helpdesk/static/src/js/portal_groupby.js',
             '/odoo_website_helpdesk/static/src/js/multiple_product_choose.js',

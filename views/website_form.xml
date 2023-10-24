@@ -239,9 +239,10 @@
                                                             </span>
                                                         </label>
                                                         <div class="col-sm">
-                                                            <select name="ticket_type" id="contact53"
+                                                            <select name="ticket_type" id="ticket_type"
                                                                     t-attf-class="form-control s_website_form_input"
-                                                                    required="1">
+                                                                    required="1" >
+                                                                <option value="0">Select the issue type</option>
                                                                 <t t-foreach="types or []"
                                                                    t-as="p">
                                                                     <option t-att-value="p.id">
@@ -347,11 +348,15 @@
                                                         </label>
                                                         <div class="col-sm">
                                                             <textarea
-                                                                    id="contact6"
+                                                                    id="detail_description"
                                                                     class="form-control s_website_form_input"
                                                                     name="description"
                                                                     placeholder="Issue description in detail"
-                                                                    required=""></textarea>
+                                                                    required=""
+                                                                    rows="15"
+                                                                    >
+
+                                                            </textarea>
                                                         </div>
                                                     </div>
                                                     <br/>
@@ -441,6 +446,9 @@
                     </div>
                 </section>
             </div>
+            <script>
+
+                                </script>
         </t>
     </template>
 </odoo>
