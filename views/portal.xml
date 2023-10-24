@@ -178,13 +178,13 @@
                     </td>
                     <th>Create Date</th>
                     <td>
-                        <t t-esc="details['create_date']"/>
+                        <t t-esc="details['create_date']" t-options='{"widget": "datetime"}'/>
                     </td>
                 </tr>
                 <tr>
                     <th>Last Update Date</th>
                     <td>
-                        <t t-esc="details['__last_update']"/>
+                        <t t-esc="details['__last_update']" t-options='{"widget": "datetime"}'/>
                     </td>
                     <th>Person Name</th>
                     <td>
@@ -208,7 +208,7 @@
                     </td>
                     <th>Replied Date</th>
                     <td>
-                        <t t-esc="details['replied_date']"/>
+                        <t t-esc="details['replied_date']" t-options='{"widget": "datetime"}'/>
                     </td>
                 </tr>
                 <tr>

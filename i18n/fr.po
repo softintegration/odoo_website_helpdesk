@@ -1548,7 +1548,7 @@ msgstr "Autres informations"
 #. module: odoo_website_helpdesk
 #: model_terms:ir.ui.view,arch_db:odoo_website_helpdesk.helpdesk_content_preview
 msgid "Person Name"
-msgstr ""
+msgstr "Demandeur"
 
 #. module: odoo_website_helpdesk
 #: model:ir.model.fields,field_description:odoo_website_helpdesk.field_help_ticket__phone
