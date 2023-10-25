@@ -401,13 +401,6 @@ msgstr ""
 "                                                                *\n"
 "                                                            </span>"
 
-"<span class=\"s_website_form_label_content\">\n"
-"                                                                Nom\n"
-"                                                            </span>\n"
-"                                                            <span class=\"s_website_form_mark\">\n"
-"                                                                *\n"
-"                                                            </span>"
-
 #. module: odoo_website_helpdesk
 #: model_terms:ir.ui.view,arch_db:odoo_website_helpdesk.ticket_form
 msgid ""
